@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Lista de Produtos</title>
+</head>
+<body>
+  <!-- CABEÇALHO -->
+    <header>
+        <section class="shop-container">
+            <h1>Shop Now</h1>
+        </section>
+    </header>
+    
+    <main class="container-main" >  
+        <nav class="nav">           
+                <ul class="list-nav">
+                    <li class="todos-produtos">Todos Produtos</li>
+                    <li id="hort">Hortifruiti</li>
+                    <li id="pani">Panificadora</li>
+                    <li id="lati">Laticínios</li>
+                </ul>
+                <section class="pesquise">
+                <input id="valor" type="text" placeholder="Pesquisar por">
+                <div id="button">&#x1F50D</div>
+                </section>
+        </nav>  
+
+        <section id="container">
+        <ul class="container-produto">
+        </ul>
+
+         <aside id="shopping" class="hiddn">
+             <h2 id="titulo"> <img src="./src/img/download.png" alt=""> Carrinho</h2>
+             <section id="cart">
+            <ul id="addCart">    
+            </ul> 
+            <section id="final">
+                <div class="finalCart" >
+                   <p id="quant">Quantidade:</p>
+                   <p id="valorQ"></p>
+                </div>
+                <div class="finalCart">
+                      <p id="total:">Total:</p>
+                      <p id="valo"></p>
+                </div>
+            </section>
+            
+            </aside> 
+        </section>
+    </main>
+
+    <script src="src/js/dataProdutos.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
